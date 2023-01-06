@@ -8,7 +8,7 @@ if __name__ == "__main__":
         print("{} argument:".format(nargs))
     else:
         print("{} arguments:".format(nargs))
-    for str in range(lens(sys.argv)):
+    for str in range(len(sys.argv)):
         if (str == 0):
-            continue:
-        print("{}: {}".format(str, sysargv[str[))
+            continue
+        print("{}: {}".format(str, sys.argv[str]))
