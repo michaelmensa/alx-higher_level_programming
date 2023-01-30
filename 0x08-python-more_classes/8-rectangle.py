@@ -83,7 +83,7 @@ class Rectangle:
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-        '''returns the biggest rectangle based on area. if rect_1 or 
+        '''returns the biggest rectangle based on area. if rect_1 or
             rect_2 is not an instance of Rectangle, raise TypeError with
             message: rect_n must be an instance of Rectangle
         '''
