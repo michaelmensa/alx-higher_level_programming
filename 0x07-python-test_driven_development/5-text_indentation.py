@@ -2,9 +2,7 @@
 
 '''
 
-5-text_indentation.py - module that contains function to print a text with 2
-                        two new lines after each of these characters;
-                        '.', '?', and ':'
+5-text_indentation.py - module that contains function text_indentation
 
 '''
 
