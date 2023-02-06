@@ -9,8 +9,8 @@ Module - lookup
 
 def lookup(obj):
 
-    ''' 
-        function that returns the list of available attributes and 
+    '''
+        function that returns the list of available attributes and
         methods of an object.
 
         Return: a list object
