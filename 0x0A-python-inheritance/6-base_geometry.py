@@ -14,4 +14,4 @@ class BaseGeometry():
         ''' method raises an Exception with message; area() is not
             implemented.
         '''
-        raise Exception("area_() is not implemented")
+        raise Exception("area() is not implemented")
