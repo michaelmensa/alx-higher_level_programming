@@ -4,7 +4,7 @@ Script to define a City class and a base class to work with
 SQLalchemy ORM
 '''
 
-from model_state import State
+from model_state import Base, State
 from sqlalchemy import Column, Integer, String, ForeignKey
 
 
