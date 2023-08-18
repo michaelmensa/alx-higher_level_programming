@@ -1,20 +1,17 @@
 #!/usr/bin/python3
-'''
-This script lists all cities from the db
-'''
 
 import MySQLdb
 from sys import argv
 
 if __name__ == '__main__':
-    '''
-    Access db and get the cities
+    ''' script that lists all cities from db hbtn_0e_4_usa
     '''
 
     db = MySQLdb.connect(host='localhost', user=argv[1], port=3306,
                          passwd=argv[2], db=argv[3])
+
     with db.cursor() as cur:
-        cur.execute('''
+        cur.execute("""
             SELECT
                 cities.id, cities.name, states.name
             FROM
@@ -22,13 +19,12 @@ if __name__ == '__main__':
             JOIN
                 states
             ON
-                cities.states_id = states.id
+                cities.name = states.id
             ORDER BY
                 cities.id ASC
-                ''')
-        rows = cur.fetchall()
+        """)
+        cities = cur.fetchall()
 
-    if rows is not None:
-        for row in rows:
-            print(row)
-
+    if cities is not None:
+        for city in cities:
+            print(city)
