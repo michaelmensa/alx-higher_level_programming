@@ -4,8 +4,7 @@ import MySQLdb
 import sys
 
 if __name__ == "__main__":
-    ''' script that lists all cities from db htn_0e_4_usa
-    '''
+    ''' script that lists all cities from db htn_0e_4_usa'''
 
     db = MySQLdb.connect(host="localhost", user=sys.argv[1], port=3306,
                          passwd=sys.argv[2], db=sys.argv[3])
